@@ -1,0 +1,1 @@
+export { default } from 'milligram-app/components/milligram-page/component';
