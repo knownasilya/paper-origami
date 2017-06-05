@@ -1,1 +1,10 @@
-{{yield}}
+<main class="wrapper">
+  <nav class="navigation">
+    <section class="container">
+      {{#link-to 'index' class='navigation-title'}}{{title}}{{/link-to}}
+    </section>
+  </nav>
+  <section class='container'>
+    {{yield}}
+  </section>
+</main>
