@@ -1,10 +1,33 @@
-<main class="wrapper">
-  <nav class="navigation">
-    <section class="container">
-      {{#link-to 'index' class='navigation-title'}}{{title}}{{/link-to}}
-    </section>
-  </nav>
-  <section class='container'>
-    {{yield}}
-  </section>
-</main>
+{{#burger-menu as |burger|}}
+  {{#burger.menu itemTagName="li" as |menu|}}
+    <button {{action burger.state.actions.close}}>Close</button>
+
+    <ul>
+      {{#menu.item}}
+        A
+      {{/menu.item}}
+
+      {{#menu.item}}
+        B
+      {{/menu.item}}
+
+      {{#menu.item}}
+        C
+      {{/menu.item}}
+    </ul>
+  {{/burger.menu}}
+
+  {{#burger.outlet}}
+    <main class="wrapper">
+      <nav class="navigation">
+        <section class="container">
+          <button {{action burger.state.actions.toggle}}>Menu</button>
+          {{#link-to 'index' class='navigation-title'}}{{title}}{{/link-to}}
+        </section>
+      </nav>
+      <section class='container'>
+        {{yield}}
+      </section>
+    </main>
+  {{/burger.outlet}}
+{{/burger-menu}}
