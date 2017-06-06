@@ -43,7 +43,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/milligram-app';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
