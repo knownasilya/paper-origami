@@ -114,11 +114,7 @@ body > .ember-view,
   border-bottom: .1rem solid #d1d1d1;
   display: block;
   height: 5.2rem;
-  left: 0;
   max-width: 100%;
-  position: fixed;
-  right: 0;
-  top: 0;
   width: 100%;
   z-index: 1
 }
