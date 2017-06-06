@@ -9,6 +9,18 @@ body > .ember-view,
   background-color: slategray;
 }
 
+.bm-menu li {
+  list-style-type: none;
+  margin-bottom: 0.3em;
+}
+
+.bm-menu li a {
+  display: block;
+  padding: 1em;
+  margin-bottom: 0.3em;
+  color: white;
+}
+
 @font-face {
     font-family: Gotham Rounded A;
     font-style: normal;

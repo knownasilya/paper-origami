@@ -3,17 +3,11 @@
     <button {{action burger.state.actions.close}}>Close</button>
 
     <ul>
-      {{#menu.item}}
-        A
-      {{/menu.item}}
-
-      {{#menu.item}}
-        B
-      {{/menu.item}}
-
-      {{#menu.item}}
-        C
-      {{/menu.item}}
+      {{#each navigation as |nav|}}
+        {{#menu.item dismissOnClick=true}}
+          {{#link-to nav.route}}{{nav.name}}{{/link-to}}  
+        {{/menu.item}}
+      {{/each}}
     </ul>
   {{/burger.menu}}
 

@@ -1,3 +1,7 @@
-{{#milligram-app title='Milligram App'}}
+{{#milligram-app title='Milligram App'
+  navigation=(array
+    (hash route='index' name='Home')
+    (hash route='getting-started' name='Getting Started')
+  )}}
   {{outlet}}
 {{/milligram-app}}
