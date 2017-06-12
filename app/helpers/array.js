@@ -1,1 +1,1 @@
-export { default, array } from 'milligram-app/helpers/array';
+export { default, array } from 'paper-origami/helpers/array';

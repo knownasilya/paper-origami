@@ -1,1 +1,1 @@
-export { default } from 'milligram-app/components/milligram-app/component';
+export { default } from 'paper-origami/components/paper-origami/component';

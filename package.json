@@ -1,5 +1,5 @@
 {
-  "name": "milligram-app",
+  "name": "paper-origami",
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
@@ -51,6 +51,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoUrl": "http://knownasilya.github.io/milligram-app/"
+    "demoUrl": "http://knownasilya.github.io/paper-origami/"
   }
 }

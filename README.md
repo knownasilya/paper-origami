@@ -1,4 +1,4 @@
-# milligram-app
+# paper-origami
 
 A basic app shell that uses http://milligram.io for it's styling, and
 can be used for addon demos.

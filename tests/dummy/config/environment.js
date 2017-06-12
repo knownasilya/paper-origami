@@ -43,7 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/milligram-app';
+    ENV.rootURL = '/paper-origami';
     ENV.locationType = 'hash';
   }
 

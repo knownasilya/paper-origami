@@ -6,7 +6,7 @@ help you get up and running. The demo app is in `tests/dummy`.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd milligram-app`
+* `cd paper-origami`
 * `npm install`
 
 ## Running

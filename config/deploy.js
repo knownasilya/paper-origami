@@ -5,7 +5,7 @@ module.exports = function(deployTarget) {
     build: {},
     // include other plugin configuration that applies to all deploy targets here
     git: {
-      repo: 'git@github.com:knownasilya/milligram-app.git',
+      repo: 'git@github.com:knownasilya/paper-origami.git',
       branch: 'gh-pages',
       worktreePath: '/tmp/deploy'
     }
