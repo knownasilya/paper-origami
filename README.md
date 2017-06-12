@@ -1,6 +1,6 @@
 # paper-origami
 
-A basic app shell that uses http://milligram.io for it's styling, and
+A basic app shell that uses [ember-paper](http://miguelcobain.github.io/ember-paper/release-1/) for it's styling, and
 can be used for addon demos.
 
 
