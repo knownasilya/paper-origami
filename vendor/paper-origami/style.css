@@ -1,0 +1,6 @@
+html,
+body,
+body > .ember-view,
+.paper-origami {
+  height: 100%;
+}
