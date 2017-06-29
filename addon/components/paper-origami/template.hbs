@@ -1,0 +1,41 @@
+<div class='app-container flex layout-column'>
+  {{#paper-sidenav-container class='site-nav-container flex layout-row'}}
+    {{#paper-sidenav lockedOpen=false closeOnClick=false open=leftSidebarOpen onToggle=(action (mut leftSidebarOpen))}}
+      {{#paper-toolbar class='sidebar-header'}}
+        {{#paper-toolbar-tools}}
+          <h3>Menu</h3>
+        {{/paper-toolbar-tools}}
+      {{/paper-toolbar}}
+
+      {{#paper-content class='md-padding'}}
+        {{#paper-list}}
+          {{#each navigation as |nav|}}
+            {{#paper-item onClick=(action 'transitionTo' nav.route) class='md-1-line'}}
+              {{nav.name}}
+            {{/paper-item}}
+          {{/each}}
+        {{/paper-list}}
+      {{/paper-content}}
+    {{/paper-sidenav}}
+
+    <div class='flex layout-column'>
+      {{#paper-toolbar class='md-whiteframe-1dp main-toolbar' as |toolbar|}}
+        {{#toolbar.tools}}
+          {{#paper-sidenav-toggle as |toggleAction|}}
+            {{#paper-button onClick=(action toggleAction) iconButton=true}}
+              {{paper-icon 'menu'}}
+            {{/paper-button}}
+          {{/paper-sidenav-toggle}}
+          <h2>
+            {{title}}
+          </h2>
+          <span class="flex"></span>
+        {{/toolbar.tools}}
+      {{/paper-toolbar}}
+
+      {{#paper-content class='flex layout-column'}}
+        {{yield}}
+      {{/paper-content}}
+    </div>
+  {{/paper-sidenav-container}}
+</div>
