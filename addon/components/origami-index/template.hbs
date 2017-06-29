@@ -1,0 +1,19 @@
+<header>
+  <h1>
+    {{origami.title}}
+    {{#if origami.slogan}}
+      <br>
+      <small>{{origami.slogan}}</small>
+    {{/if}}
+  </h1>
+
+  <div class='scroll-indicator layout-row layout-align-center-center'>
+    <div>
+      {{paper-icon 'arrow-downward' size=48}}
+    </div>
+  </div>
+</header>
+
+{{#origami-page noTitle=true}}
+  {{yield}}
+{{/origami-page}}

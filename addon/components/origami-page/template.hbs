@@ -1,1 +1,9 @@
-{{yield}}
+{{#paper-content scroll-y=true class='layout-padding flex'}}
+  {{#unless noTitle}}
+    <h2>{{origami.page.name}}</h2>
+  {{/unless}}
+  
+  <section class='content-body'>
+    {{yield}}
+  </section>
+{{/paper-content}}

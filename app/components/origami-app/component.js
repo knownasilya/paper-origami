@@ -1,0 +1,1 @@
+export { default } from 'paper-origami/components/origami-app/component';

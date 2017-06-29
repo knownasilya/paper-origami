@@ -5,5 +5,6 @@ const { inject } = Ember;
 
 export default Ember.Component.extend({
   origami: inject.service(),
-  layout
+  layout,
+  classNames: ['origami-index']
 });
