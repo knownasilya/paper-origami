@@ -21,11 +21,11 @@
   "dependencies": {
     "ember-cli-sass": "^6.2.0",
     "ember-router-service-polyfill": "^1.0.1",
-    "ember-paper": "^1.0.0-alpha.19",
     "ember-cli-babel": "^6.0.0",
     "ember-cli-htmlbars": "^1.1.1"
   },
   "devDependencies": {
+    "ember-paper": "^1.0.0-alpha.19",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "2.13.2",
