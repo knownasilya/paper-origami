@@ -7,11 +7,13 @@
     {{/if}}
   </h1>
 
-  <div class='scroll-indicator layout-row layout-align-center-center'>
-    <div>
-      {{paper-icon 'arrow-downward' size=48}}
+  {{#if hasBlock}}
+    <div class='scroll-indicator layout-row layout-align-center-center'>
+      <div>
+        {{paper-icon 'arrow-downward' size=48}}
+      </div>
     </div>
-  </div>
+  {{/if}}
 </header>
 
 {{#origami-page noTitle=true}}
