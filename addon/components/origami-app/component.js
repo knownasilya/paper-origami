@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import layout from './template';
 
-const { inject } = Ember;
+const { A, inject } = Ember;
 
 export default Ember.Component.extend({
   router: inject.service(),
@@ -10,7 +10,7 @@ export default Ember.Component.extend({
   classNames: ['paper-origami'],
 
   didReceiveAttrs() {
-    let navigation = this.get('navigation');
+    let navigation = A(this.get('navigation'));
     let title = this.get('title');
     let slogan = this.get('slogan');
 

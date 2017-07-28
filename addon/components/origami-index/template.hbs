@@ -5,6 +5,14 @@
       <br>
       <small>{{origami.slogan}}</small>
     {{/if}}
+
+    {{#unless hasBlock}}
+      <div>
+        {{#paper-button class='origami-big-btn' primary=true raised=true onClick=(action 'transitionTo' nextNavigation.route)}}
+          Get Started
+        {{/paper-button}}
+      </div>
+    {{/unless}}
   </h1>
 
   {{#if hasBlock}}
