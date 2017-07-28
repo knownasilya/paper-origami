@@ -1,6 +1,6 @@
 <div class='app-container flex layout-column'>
   {{#paper-sidenav-container class='site-nav-container flex layout-row'}}
-    {{#paper-sidenav lockedOpen=false closeOnClick=false open=leftSidebarOpen onToggle=(action (mut leftSidebarOpen))}}
+    {{#paper-sidenav lockedOpen=false closeOnClick=true open=leftSidebarOpen onToggle=(action (mut leftSidebarOpen))}}
       {{#paper-toolbar class='sidebar-header'}}
         {{#paper-toolbar-tools}}
           <h3>Menu</h3>
