@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/knownasilya/paper-origami/compare/v0.1.4...v0.2.0) (2017-07-28)
+
+
+### Bug Fixes
+
+* close sidebar on click ([d7211db](https://github.com/knownasilya/paper-origami/commit/d7211db))
+* Only show scrolldown indicator on index if index has a block ([77b003d](https://github.com/knownasilya/paper-origami/commit/77b003d))
+
+
+### Features
+
+* get started link from index if no block ([2858243](https://github.com/knownasilya/paper-origami/commit/2858243))
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/knownasilya/paper-origami/compare/v0.1.3...v0.1.4) (2017-07-15)
 
