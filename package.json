@@ -16,7 +16,8 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each",
-    "release": "standard-version"
+    "release": "standard-version",
+    "deploy": "ember deploy production"
   },
   "dependencies": {
     "ember-cli-sass": "^6.2.0",
