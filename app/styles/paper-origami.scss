@@ -1,3 +1,13 @@
+.paper-origami {
+  .repository-url {
+    margin-top: 0.2em;
+  }
+  
+  .octicon-mark-github {
+    fill: white;
+  }
+}
+
 .origami-index {
   header {
     height: calc(100vh - 48px);
