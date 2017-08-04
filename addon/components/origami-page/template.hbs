@@ -6,4 +6,24 @@
   <section class='content-body'>
     {{yield}}
   </section>
+
+  {{#if (and (not hidePageNavigation) (or nextNavigation previousNavigation))}}
+    <div class='navigation-footer layout-row'>
+      {{#if previousNavigation}}
+        {{#paper-button onClick=(action 'transitionTo' previousNavigation.route)}}
+          {{paper-icon 'chevron left'}}
+          {{previousNavigation.name}}
+        {{/paper-button}}
+      {{/if}}
+
+      <div class='flex'></div>
+
+      {{#if nextNavigation}}
+        {{#paper-button onClick=(action 'transitionTo' nextNavigation.route)}}
+          {{nextNavigation.name}}
+          {{paper-icon 'chevron right'}}
+        {{/paper-button}}
+      {{/if}}
+    </div>
+  {{/if}}
 {{/paper-content}}
