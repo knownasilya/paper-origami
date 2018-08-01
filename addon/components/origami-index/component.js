@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import { inject as service } from '@ember/service';
+import $ from 'jquery';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 import layout from './template';
 
-const { inject, computed } = Ember;
-
-export default Ember.Component.extend({
-  origami: inject.service(),
-  router: inject.service(),
+export default Component.extend({
+  origami: service(),
+  router: service(),
   layout,
   classNames: ['origami-index'],
 
@@ -24,7 +25,7 @@ export default Ember.Component.extend({
     transitionTo(...args) {
       let last = args[args.length - 1];
       
-      if (last instanceof Ember.$.Event) {
+      if (last instanceof $.Event) {
         args = args.slice(0, -1);
       }
       

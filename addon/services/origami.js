@@ -1,9 +1,8 @@
-import Ember from 'ember';
+import Service, { inject as service } from '@ember/service';
+import { computed } from '@ember/object';
 
-const { inject, computed } = Ember;
-
-export default Ember.Service.extend({
-  router: inject.service(),
+export default Service.extend({
+  router: service(),
 
   page: computed('router.currentRouteName', 'navigation', {
     get() {
